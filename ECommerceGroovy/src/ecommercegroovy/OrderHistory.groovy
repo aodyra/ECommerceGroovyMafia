@@ -11,7 +11,7 @@ package ecommercegroovy
  * @author Bimo
  */
 class OrderHistory {
-	public void add(Pesanan p){
+	public void add(Order p){
             
         }
 }

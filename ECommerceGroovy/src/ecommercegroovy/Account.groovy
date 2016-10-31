@@ -22,7 +22,15 @@ class Account {
         def alamat;
         
         public void edit(String field, String newvalue){
-            
+            switch(field.toUpperCase()){
+                case "NOHP" : 
+                    setNoHP(newvalue);
+                    break;
+                case "PASSWORD" : 
+                    setpassword(newvalue);
+                    break;
+                 
+            }
         }
         
         public Account(){ }
@@ -45,6 +53,9 @@ class Account {
       public def getpassword(){
           return this.password;
       }
+      public setpassword(String newpassword){
+          this.password = newpassword;
+      }
       public def getnama(){
           return this.nama;
       }
@@ -57,8 +68,14 @@ class Account {
       public def getNoHP(){
           return this.noHp;
       }
+      public setNoHP(String newNoHP){
+          this.noHP = newNoHP;
+      }
       public def getalamat(){
           return this.alamat;
+      }
+      public setalamat(String newalamat){
+          this.alamat = newalamat;
       }
 }
 
