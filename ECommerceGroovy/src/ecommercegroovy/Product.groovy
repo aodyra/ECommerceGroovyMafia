@@ -16,9 +16,11 @@ class Product {
     def price;
     def amount;
     def categories;
+    def reviews;
     
     public Product(){ }
-    public Product(String name, double price, int amount, ArrayList<String> categories){
+    public Product(int id, String name, double price, int amount, ArrayList<String> categories){
+        this.id = id;
         this.name = name;
         this.price = price;
         this.amount = amount;
@@ -71,6 +73,14 @@ class Product {
     
     public def setCategories(ArrayList<String> categories){
         this.categories = categories;
+    }
+    
+    public def getReviews(){
+        return this.reviews;
+    }
+    
+    public def setReviews(){
+        
     }
 }
 
