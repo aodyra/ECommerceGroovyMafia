@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Promotion {                     
   def id  
   def period 
